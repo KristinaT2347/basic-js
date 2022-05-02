@@ -37,7 +37,6 @@ function transform(arr) {
     } else if (arr[i] === "--double-next") {
       if (i + 1 < arr.length && !operations.includes(i + 1)) {
         result.push(arr[i + 1])
-        operations.push(i + 1)
       }
     } else if (arr[i] === "--double-prev") {
       if (i - 1 > 0 && !operations.includes(i - 1)) {
